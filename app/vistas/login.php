@@ -34,7 +34,7 @@ if (!isset($_SESSION['correo']) || !isset($_SESSION['rol'])) {
                 </figure>
             </article>
             <h2 id="text_login">Inicia sesión</h2>
-            <form id="form-login" method="POST" action=" ">
+            <form id="form-login" method="POST" action="">
                 <label for="usuario" class="label-login">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required pattern="[a-z0-9]{5,25}" tabindex="1" title="Ingrese su usuario"><br><br>
                 <label for="password" class="label-login">Contraseña:</label>
@@ -55,29 +55,5 @@ if (!isset($_SESSION['correo']) || !isset($_SESSION['rol'])) {
             
         </section>
     </main>
-    
-
-
-    <?php
-    // Mostrar mensajes de SweetAlert2 si existen
-    if (isset($_GET['titulo']) && isset($_GET['mensaje']) && isset($_GET['icono'])) {
-        $titulo = $_GET['titulo'];
-        $mensaje = $_GET['mensaje'];
-        $icono = $_GET['icono'];
-    
-        // Mostrar el mensaje con SweetAlert2
-        echo "<script>
-            Swal.fire({
-                title: '{$titulo}',
-                text: '{$mensaje}',
-                icon: '{$icono}',
-                timer: '$timie',
-                confirmButtonText: 'Aceptar'
-            });
-        </script>";
-        unset($titulo, $mensaje, $icono);
-    }
-    ?>
-
 </body>
 </html>

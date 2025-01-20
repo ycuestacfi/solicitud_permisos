@@ -34,13 +34,7 @@ class LoginController {
                 // Iniciar sesión si las credenciales son válidas
                 SessionHelper::iniciarSesion($usuario);
 
-                // $misSolicitudes = $this->solicitudModel->solicitudes_realizadas($usuario['cedula']);
-                // var_dump($misSolicitudes);
-                // Si el usuario marcó "Recordarme", guardar las cookies
-                if (isset($_POST['remember_me'])) {
-                    CookieHelper::guardarCookies($usuario_log);
-                }
-
+               
                 // Redirigir según el rol del usuario
                 if ($_SESSION['rol'] === 'solicitante') {   
                     header("Location: /solicitud_permisos/app/vistas/solicitudes.php");

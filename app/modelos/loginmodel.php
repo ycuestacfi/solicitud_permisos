@@ -23,6 +23,7 @@ class loginmodel {
         // Obtener el resultado
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         // Verificar si se encontró el usuario
+        
         return $result ?: false;
     }
 
