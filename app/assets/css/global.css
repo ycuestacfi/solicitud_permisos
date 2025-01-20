@@ -1,0 +1,166 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-size: 17px;
+    font-family: "Inter";
+}
+
+/* Variables de color */
+:root {
+    --verde-corporativo: #72BE44;
+    --azul-oscuro-contraste: #002A3F;
+    --blanco: #FFFFFF;
+    --blanco-segundario: #f9f9f9;
+    --gris-fondo:#333531;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    /* background: linear-gradient(to top, var(--verde-corporativo), var(--blanco) ); */
+   background: url(/solicitud_de_permisos_laborales/app/assets/img/loginBackground.jpg)center center /cover no-repeat ;
+   
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+}
+td{
+    background-color: var(--blanco);
+    color: var(--azul-oscuro-contraste);
+    text-align: center;
+}
+th{
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--blanco);
+    border: solid 2px var(--blanco);
+    background-color: var(--verde-corporativo);
+}
+.button-aceptar-alert{
+    background-color: var(--verde-corporativo);
+    color: var(--blanco);
+    border: none;
+}
+#btn_salir{
+    color: var(--verde-corporativo);
+    background-color: var(--blanco);
+    width: 100%;
+    font-size: 22px;
+    border-radius: 25px;
+    height: 40px;
+    position: absolute;
+    top: 90%;
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
+#btn_salir:hover{   
+    scale: 1.1;
+}
+
+#fondo-form {
+    height: 75%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 20px 50px var(--gris-fondo);
+    overflow: hidden;
+    /* background: url(/app/assets/img/loginBackground.jpg) center center / cover no-repeat; */
+    background: linear-gradient(to top, var(--verde-corporativo), var(--blanco) );
+}
+
+#fondo-formulario {
+    background-color: var(--azul-oscuro-contraste);
+    height: 100%;
+    width: 100%;
+    transform: rotate(45deg);
+    right: 28%;
+    top: 28%;
+    position: relative;
+}
+#btn-enviar {
+    position: relative;
+    background: var(--verde-corporativo);
+    color: var(--blanco);
+    font-weight: 600;
+    border: solid 2px var(--blanco);
+    width: 60%;
+    top: 25px;
+    
+}
+#btn-enviar:hover{
+    box-shadow: 1px 1px 10px var(--blanco);
+}
+#contenedor-logo {
+    position: relative;
+    bottom: 180px;
+    height: 150px;
+    width: 35%;
+    left: 32%;
+}
+#contenedor-logo img{
+    height: 100%;
+    width: 100%;
+}
+header{
+    width: 15%;
+    height: 100vh;
+    padding: 15px;
+    display: inline-flex;
+    background: var(--azul-oscuro-contraste);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--verde-corporativo);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+figure{
+    height: 100%;
+    margin: 0;
+    width: 20%;
+    position: relative;
+    left: 0;
+
+}
+nav{
+    position: relative;
+    left: 10%;
+    width: 70%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    justify-content: space-evenly;
+    display: flex;
+}
+ul{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5px;
+}
+li{
+    list-style: none;
+    height: 60px;
+    width: 100%;
+    font-size: 22px;
+    backdrop-filter: blur(10px);
+    background: #72be4421;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li a {
+    color: var(--verde-corporativo);
+    font-size: 17px;
+    text-decoration: none;
+}
